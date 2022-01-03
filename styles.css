@@ -227,15 +227,14 @@ h1 {
     aspect-ratio: 1;
 }
 
-section {
-    /* border: 1px solid yellow; */
+.creator-info {
     display: flex;
     align-items: center;
     justify-content: left;
     padding-top: 1.5em;
 }
 
-section p {
+.creator-info p {
     padding-left: 20px;
 }
 
