@@ -88,7 +88,8 @@ body {
     line-height: 1.75;
     min-height: 100vh;
     display: grid;
-    grid-template-rows: min-content 1fr;
+    justify-content: center;
+/*     grid-template-rows: min-content 1fr; */
     overflow-x: hidden;
 }
 
@@ -149,11 +150,11 @@ select {
 .back-to-content {
     position: absolute;
     z-index: -1;
-    margin-left: 130px;
+    margin-inline-start: 11.5em;
     background: hsl(var(--clr-darkblue));
     color: hsl(var(--clr-softblue));
     padding: .05em 1em;
-    transform: translateY(-100%);
+    transform: translateY(-170%);
     transition: transform 500ms ease-in;
 }
 
@@ -203,54 +204,6 @@ select {
 /*      Components       */
 /* --------------------- */
 
-.main-img {
-    display: block;
-    max-width: min(18em, 100%);
-    border-radius: 18px;
-}
-
-h1 {
-    padding-top: .75em;
-}
-
-.meta {
-    padding-top: .75em;
-    justify-content: space-between;
-    border-bottom: 1px solid hsl(var(--clr-softerblue));
-    padding-bottom: 1em; 
-}
-
-.avatar-img {
-    max-inline-size: 2.5em;
-    border: 1px solid white;
-    border-radius: 50%;
-    aspect-ratio: 1;
-}
-
-.creator-info {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    padding-top: 1.5em;
-}
-
-.creator-info p {
-    padding-left: 20px;
-}
-
-.attribution {
-    padding: 1em;
-    text-align: center;
-}
-
-.attribution a {
-    color: whitesmoke;
-}
-
-/* ---------------------- */
-/*          Layout        */
-/* ---------------------- */
-
 .container {
     min-height: 90vh;
     margin: auto;
@@ -261,7 +214,7 @@ h1 {
 .card {
     max-width: 21em;
     padding: 1.5em;
-    margin: auto;
+    margin: 1em 2em;
     border-radius: 18px;
     align-content: center;
     z-index: 1;
@@ -281,12 +234,56 @@ h1 {
     background-position: center;
 }
 
+.main-img {
+    display: block;
+    max-width: min(18em, 100%);
+    border-radius: 18px;
+}
+
 .main-img:hover {
     opacity: 0;
+}
+
+h1 {
+    padding-top: .75em;
 }
 
 h1:hover,
 .creator:hover {
     cursor: pointer;
     color: hsl(var(--clr-cyan));
+}
+
+.meta {
+    padding-top: .75em;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(var(--clr-softerblue));
+    padding-bottom: 1em; 
+}
+
+.creator-info {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-top: 1.5em;
+}
+
+.creator-img {
+    max-inline-size: 2.5em;
+    border: 1px solid white;
+    border-radius: 50%;
+    aspect-ratio: 1;
+}
+
+.creator-info p {
+    padding-left: 20px;
+}
+
+.attribution {
+    padding: 1em;
+    text-align: center;
+}
+
+.attribution a {
+    color: whitesmoke;
 }
